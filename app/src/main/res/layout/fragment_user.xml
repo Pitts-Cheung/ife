@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:background="@color/lightGrey"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/user_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@mipmap/default_user_icon"/>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="个人主页"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12dp"/>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/go_icon"
+                    android:tint="@color/darkGrey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/user_followed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:background="#00000000"
+                    android:text="关注"
+                    android:textSize="14dp"
+                    android:textColor="@color/darkGrey"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/user_follow_me"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:background="#00000000"
+                    android:text="粉丝"
+                    android:textSize="14dp"
+                    android:textColor="@color/darkGrey"
+                    android:foreground="?attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_info_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/user_bottom_icon"
+                android:tint="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="编辑个人资料"
+                android:textColor="@color/darkGrey"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/user_token_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/token_task_icon"
+                    android:tint="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="我领取的任务"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/my_answer_icon"
+                    android:tint="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="我回答的问题"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/group_icon"
+                    android:tint="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="我加入的队伍"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_star"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/star_icon"
+                    android:tint="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="我的收藏"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/payment_icon"
+                    android:tint="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="支付管理"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/setting_icon"
+                    android:tint="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="设置"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
